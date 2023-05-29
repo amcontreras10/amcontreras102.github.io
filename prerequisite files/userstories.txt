@@ -1,0 +1,3 @@
+As a developer, I will create a search engine that will allow the user to access any content they wish from the GIPHY API. 
+As a user, I will easily navigate the search engine to find the content I am looking for from GIPHY
+As a user, I will use this website to find GIPHs effectively and efficiently. 
