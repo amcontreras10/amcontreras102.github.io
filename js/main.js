@@ -13,8 +13,7 @@ function init() {
                 //data, pagination, meta
                 console.log(content.data)
                 console.log('META', content.meta);
-                let fig = document.createElement('figure');
-                let img = document.createElement('img');
+              let fig = document.createElement('figure');
                 img.src = content.data[0].images.downsized.url;
                 img.alt = content.data[0].title;
                 fig.appendChild(img);
