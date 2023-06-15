@@ -17,3 +17,18 @@ body {
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Poppins', sans-serif;
 }
+
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* insert styles here */
+}
+ 
+/* (320x480) Smartphone, Portrait */
+@media only screen and (device-width: 320px) and (orientation: portrait) {
+    /* insert styles here */
+}
+ 
+/* (320x480) Smartphone, Landscape */
+@media only screen and (device-width: 480px) and (orientation: landscape) {
+    /* insert styles here */
+}
