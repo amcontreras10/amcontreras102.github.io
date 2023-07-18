@@ -19,20 +19,24 @@ function init() {
                 console.log(content.data);
                 console.log("META", content.meta);
                 // creating elements from data
-                let fig = document.createElement("figure");
-                let img = document.createElement("img");
-                let fc = document.createElement("figcaption");
-                img.src = content.data[0].images.downsized.url;
-                img.alt = content.data[0].title;
-                fc.textContent = content.data[0].title;
-                fig.appendChild(img);
-                fig.appendChild(fc);
-                let out = document.querySelector(".out");
-                //newest search goes to the top
-                out.insertAdjacentElement("afterbegin", fig);
-                //clear up the form in the console
-                document.querySelector("#search").value = "";
-            })
+                const n = 9;
+                for (let i = 1; i <= n; i++) {
+                    console.log(i);
+                    let fig = document.createElement("figure");
+                    let img = document.createElement("img");
+                    let fc = document.createElement("figcaption");
+                    img.src = content.data[0].images.downsized.url;
+                    img.alt = content.data[0].title;
+                    fc.textContent = content.data[0].title;
+                    fig.appendChild(img);
+                    fig.appendChild(fc);
+                    let out = document.querySelector(".out");
+                    //newest search goes to the top
+                    out.insertAdjacentElement("afterbegin", fig);
+                    //clear up the form in the console
+                    document.querySelector("#search").value = "";
+                }
+})
             // handle any errors
                 .catch (err => {
                 console.error(err);
