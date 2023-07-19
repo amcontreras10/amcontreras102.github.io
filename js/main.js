@@ -7,7 +7,7 @@ function init() {
     document.getElementById("btnSearch").addEventListener("click", ev => {
         ev.preventDefault(); //to stop the page reload
         // url info from GIPHY Search Endpoint 
-        let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=9&q=`;
+        let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=10&q=`;
         let str = document.getElementById("search").value.trim();
         url = url.concat(str);
         console.log(url);
@@ -19,15 +19,15 @@ function init() {
                 console.log(content.data);
                 console.log("META", content.meta);
                 // creating elements from data
-                const n = 9;
+                let n = 9;
                 for (let i = 1; i <= n; i++) {
                     console.log(i);
                     let fig = document.createElement("figure");
                     let img = document.createElement("img");
                     let fc = document.createElement("figcaption");
-                    img.src = content.data[0].images.downsized.url;
-                    img.alt = content.data[0].title;
-                    fc.textContent = content.data[0].title;
+                    img.src = content.data[i].images.downsized.url;
+                    img.alt = content.data[i].title;
+                    fc.textContent = content.data[i].title;
                     fig.appendChild(img);
                     fig.appendChild(fc);
                     let out = document.querySelector(".out");
