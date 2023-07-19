@@ -25,15 +25,13 @@ body {
 div.out {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 90%;
-    margin: 0 auto;
+    justify-content: space-between;
+    justify-items: center;
     flex-wrap: wrap;
+    margin: 0 auto;
     
 }
 
 figure {
-    display: block;
+    object-fit: fill;
 }
-
-
