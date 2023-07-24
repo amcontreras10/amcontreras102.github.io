@@ -48,7 +48,7 @@ c. Lastly, for a more competitive website, you can implement a "trending" displa
 This project is not licensed 
 
 10. Validation
-ES Lint 
+No errors on JSHINT- only suggestions for syntax beyond ES6. 
 
 11. Contact 
 Armando Contreras - amcontreras10@gmail.com 
