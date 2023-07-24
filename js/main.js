@@ -27,10 +27,13 @@ function init() {
                     let fc = document.createElement("figcaption");
                     img.src = content.data[i].images.downsized.url;
                     img.alt = content.data[i].title;
+                    img.setAttribute('class', 'image');
+                    fig.setAttribute('class', 'figure');
+                    fc.setAttribute('class', 'figcaption');
                     fc.textContent = content.data[i].title;
                     fig.appendChild(img);
                     fig.appendChild(fc);
-                    let out = document.querySelector(".out");
+                    let out = document.querySelector("#out");
                     //newest search goes to the top
                     out.insertAdjacentElement("afterbegin", fig);
                     //clear up the form in the console
